@@ -48,6 +48,7 @@
     <Compile Include="BankAccount.cs" />
     <Compile Include="BankWorkers\BankWorker.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="ExtentionMethods.cs" />
     <Compile Include="IAddAccount.cs" />
     <Compile Include="BankWorkers\IDecreaseMoney.cs" />
     <Compile Include="BankWorkers\IEditClientData.cs" />

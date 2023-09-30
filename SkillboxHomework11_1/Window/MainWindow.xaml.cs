@@ -285,5 +285,13 @@ namespace SkillboxHomework10_1
             bankWorker.SaveToFile();
             base.OnClosed(e);
         }
+
+        private void ShowClientInfo(object sender, RoutedEventArgs e)
+        {
+            if (dgClientsList.SelectedIndex!=-1)
+            {
+                MessageBox.Show((dgClientsList.SelectedItem as Client).ShowInfoAboutClient());
+            }
+        }
     }
 }

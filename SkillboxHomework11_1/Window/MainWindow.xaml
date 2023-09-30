@@ -57,7 +57,7 @@
             <ListBox Name="lbAccounts"  Grid.Column="1" Margin="0,10,0,10"/>
         </Grid>
         <TextBlock Grid.Row="1" Name="tbInfo" Margin="30,54,243,10" TextWrapping="Wrap" Text="{Binding Path=info}"/>
-        
+        <Button Grid.Row="1" x:Name="btnInfo" Content="Инфо" Click="ShowClientInfo"  Width="160" Height="30"  Margin="0,25,30,30" HorizontalAlignment="Right"  />
 
     </Grid>
 
