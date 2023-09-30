@@ -1,5 +1,5 @@
-﻿using SkillboxHomework10_1.BankWorkers;
-
+﻿using BankClassLibrary;
+using LogClassesLibrary;
 using SkillboxHomework10_1;
 using System;
 using System.Collections.Generic;
@@ -23,14 +23,14 @@ using System.Windows.Shapes;
 //Количество денег не обновляется сразу после перевода
 
 
+//Если применимо, добавьте методы расширения и перегрузку операций.
+
+
 //СДЕЛАНО:
-//Реализовать оповещение через события
-//Добавление счета
-//Удаление счета
-//Перевод
-//Пополнение счета
-//Изменение данных клиента
-//Реализовать логирование через события - прописать запись в файл!!
+//Разделите ваш проект на проект с интерфейсом и библиотеку:
+//в библиотеке будет храниться основная логика приложения;
+//в проекте с интерфейсом будет храниться только логика взаимодействия с интерфейсом и сам интерфейс.
+//Создайте одно или несколько исключений и используйте его (их) в своём коде.
 
 namespace SkillboxHomework10_1
 {
@@ -230,16 +230,34 @@ namespace SkillboxHomework10_1
                 transferMoneyWindow.ShowDialog();
                 if (transferMoneyWindow.DialogResult == true)
                 {
-                    Client target = transferMoneyWindow.cbTargetClient.SelectedItem as Client;
-                    int amount = transferMoneyWindow.amount;
+                    try
+                    {
 
-                    moneyDecrease = new Bank<BankAccount>();
-                    moneyIncrease = new Bank<DepositeAccount>();
-                    moneyDecrease.DecreaseMoney(lbAccounts.SelectedItem as BankAccount, amount);
-                    moneyIncrease.IncreaseMoney(amount, transferMoneyWindow.cbTargetAcc.SelectedItem as BankAccount);
+                        Client target = transferMoneyWindow.cbTargetClient.SelectedItem as Client;
+                        int amount = transferMoneyWindow.amount;
+                        if (amount > 10000) throw new MaxAmountException("Превышение допустимой суммы для перевода!\n(Максимальная сумма 10000)");
 
-                    TransferEvent($"{bankWorker.accessType} осуществил перевод {amount} долларов от " +
-                        $"{source.LastName} {source.Name} к {target.LastName} {target.Name}, {DateTime.Now}") ;
+                        moneyDecrease = new Bank<BankAccount>();
+                        moneyIncrease = new Bank<DepositeAccount>();
+                        moneyDecrease.DecreaseMoney(lbAccounts.SelectedItem as BankAccount, amount);
+                        moneyIncrease.IncreaseMoney(amount, transferMoneyWindow.cbTargetAcc.SelectedItem as BankAccount);
+
+                        TransferEvent($"{bankWorker.accessType} осуществил перевод {amount} долларов от " +
+                            $"{source.LastName} {source.Name} к {target.LastName} {target.Name}, {DateTime.Now}");
+                    }
+                    catch (MaxAmountException exception)
+                    {
+
+                        MessageBox.Show(exception.Message);
+                    }
+                    catch (NotEnoughMoneyException exception)
+                    {
+                        MessageBox.Show(exception.Message);
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message);
+                    }
                 } 
             }
         }

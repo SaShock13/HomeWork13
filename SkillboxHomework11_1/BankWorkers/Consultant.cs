@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Newtonsoft.Json;
-using SkillboxHomework10_1.BankWorkers;
+using BankClassLibrary;
 
 namespace SkillboxHomework10_1
 {

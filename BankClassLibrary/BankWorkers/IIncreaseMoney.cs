@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillboxHomework10_1.BankWorkers
+namespace BankClassLibrary
 {
     public interface IIncreaseMoney<out T> 
     {

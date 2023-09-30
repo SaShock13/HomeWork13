@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,12 +35,13 @@ namespace SkillboxHomework10_1
 
         private void btnOK_Click(object sender, RoutedEventArgs e)
         {
-
-            if (cbTargetAcc.SelectedIndex != -1 & int.TryParse(tbAmount.Text,out amount))
-            {
-                
-                DialogResult = true;
-            }
+           
+                if (cbTargetAcc.SelectedIndex != -1 & int.TryParse(tbAmount.Text, out amount))
+                {
+                    
+                    DialogResult = true;
+                }
+           
         }
     }
 }

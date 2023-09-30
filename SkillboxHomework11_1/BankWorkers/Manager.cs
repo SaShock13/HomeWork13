@@ -1,4 +1,4 @@
-﻿using SkillboxHomework10_1.BankWorkers;
+﻿using BankClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;

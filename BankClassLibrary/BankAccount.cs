@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace SkillboxHomework10_1
+namespace BankClassLibrary
 {
     public class BankAccount:INotifyPropertyChanged
     {
@@ -59,8 +60,14 @@ namespace SkillboxHomework10_1
         }
         public void DecreaseAccount(int amount)
         {
-            this.MoneyAmount -= amount;
-           //MessageBox.Show("Уменьшено");
+           
+                if (this.MoneyAmount - amount < 0)
+                {
+                    throw new NotEnoughMoneyException("Количество денег недостаточно для данного перевода");
+                }
+                this.MoneyAmount -= amount;
+           
+           
         }
     }
 

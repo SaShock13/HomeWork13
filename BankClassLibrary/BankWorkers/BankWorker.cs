@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SkillboxHomework10_1
+namespace BankClassLibrary
 {
     public abstract class BankWorker : INotifyPropertyChanged
     {

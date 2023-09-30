@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace SkillboxHomework10_1
+namespace LogClassesLibrary
 {
     public class Logger
     {

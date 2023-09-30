@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SkillboxHomework10_1.BankWorkers;
+using BankClassLibrary;
 
-namespace SkillboxHomework10_1
+namespace BankClassLibrary
 {
     public class Bank<T> : IIncreaseMoney<T>, IDecreaseMoney<T> where T : BankAccount
     {

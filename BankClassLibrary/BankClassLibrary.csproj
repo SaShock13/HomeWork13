@@ -52,7 +52,7 @@
     <Compile Include="BankWorkers\IDecreaseMoney.cs" />
     <Compile Include="BankWorkers\IEditClientData.cs" />
     <Compile Include="BankWorkers\IIncreaseMoney.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="MyException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
