@@ -64,14 +64,14 @@ namespace SkillboxHomework10_1
         }
     }
 
-    class DepositeAccount:BankAccount
+    public class DepositeAccount:BankAccount
     {
         public DepositeAccount(int amount):base("Депозитный",amount)
         {
             
         }
     }
-    class NonDepositeAccount : BankAccount
+    public class NonDepositeAccount : BankAccount
     {
         public NonDepositeAccount(int amount) : base("Недепозитный", amount)
         {

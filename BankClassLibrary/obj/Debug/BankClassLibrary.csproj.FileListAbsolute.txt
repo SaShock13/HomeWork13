@@ -1,0 +1,9 @@
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.AssemblyReference.cache
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\bin\Debug\BankClassLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\bin\Debug\BankClassLibrary.pdb
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CopyComplete
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\obj\Debug\BankClassLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\BankClassLibrary\obj\Debug\BankClassLibrary.pdb

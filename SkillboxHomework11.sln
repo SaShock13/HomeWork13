@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillboxHomework11", "SkillboxHomework11_1\SkillboxHomework11.csproj", "{59A3CE94-5912-453D-B66E-385673D5AB60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankClassLibrary", "BankClassLibrary\BankClassLibrary.csproj", "{7D84755E-863A-4D19-A6B5-3398B049B271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogClassesLibrary", "LogClassesLibrary\LogClassesLibrary.csproj", "{F99C4223-CD3C-4D71-9B72-83EEA3EB913D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{59A3CE94-5912-453D-B66E-385673D5AB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A3CE94-5912-453D-B66E-385673D5AB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A3CE94-5912-453D-B66E-385673D5AB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D84755E-863A-4D19-A6B5-3398B049B271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D84755E-863A-4D19-A6B5-3398B049B271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D84755E-863A-4D19-A6B5-3398B049B271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D84755E-863A-4D19-A6B5-3398B049B271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99C4223-CD3C-4D71-9B72-83EEA3EB913D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99C4223-CD3C-4D71-9B72-83EEA3EB913D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99C4223-CD3C-4D71-9B72-83EEA3EB913D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99C4223-CD3C-4D71-9B72-83EEA3EB913D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

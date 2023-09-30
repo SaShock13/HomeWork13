@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillboxHomework10_1.BankWorkers
 {
-    internal interface IEditClientData
+    public interface IEditClientData
     {
         void EditClientData(Client client);
         

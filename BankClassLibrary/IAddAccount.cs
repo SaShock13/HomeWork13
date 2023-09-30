@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillboxHomework10_1
 {
-    internal interface IAddAccount<T> where T : BankAccount
+    public interface IAddAccount<T> where T : BankAccount
     {
         void AddAccount(T account,BankWorker bankWorker);
     }

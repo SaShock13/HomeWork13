@@ -1,0 +1,6 @@
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\bin\Debug\LogClassesLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\bin\Debug\LogClassesLibrary.pdb
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\obj\Debug\LogClassesLibrary.csproj.AssemblyReference.cache
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\obj\Debug\LogClassesLibrary.csproj.CoreCompileInputs.cache
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\obj\Debug\LogClassesLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\LogClassesLibrary\obj\Debug\LogClassesLibrary.pdb

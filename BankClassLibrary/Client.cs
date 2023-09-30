@@ -199,7 +199,7 @@ namespace SkillboxHomework10_1
 
         }
 
-        internal void DeleteAccount(BankAccount acc, BankWorker bankWorker)
+        public void DeleteAccount(BankAccount acc, BankWorker bankWorker)
         {
             AccList.Remove(acc);
             ClientEvent($"{bankWorker.accessType} Удалил счет клиента {this.LastName} {this.Name}, {DateTime.Now}");

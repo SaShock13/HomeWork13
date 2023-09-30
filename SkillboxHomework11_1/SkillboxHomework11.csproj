@@ -69,11 +69,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BankWorkers\IDecreaseMoney.cs" />
-    <Compile Include="BankWorkers\IIncreaseMoney.cs" />
-    <Compile Include="IAddAccount.cs" />
-    <Compile Include="Bank.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="BankWorkers\Consultant.cs" />
+    <Compile Include="BankWorkers\Manager.cs" />
     <Compile Include="Window\AccessWindow.xaml.cs">
       <DependentUpon>AccessWindow.xaml</DependentUpon>
     </Compile>
@@ -83,14 +80,10 @@
     <Compile Include="Window\AddClientWindow.xaml.cs">
       <DependentUpon>AddClientWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="BankWorkers\BankWorker.cs" />
-    <Compile Include="BankWorkers\IEditClientData.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Window\EditWindow.xaml.cs">
       <DependentUpon>EditWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BankWorkers\Consultant.cs" />
     <Compile Include="Window\TransferMoneyWindow.xaml.cs">
       <DependentUpon>TransferMoneyWindow.xaml</DependentUpon>
     </Compile>
@@ -118,7 +111,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Client.cs" />
     <Compile Include="Window\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -129,7 +121,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankWorkers\Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -155,6 +146,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankClassLibrary\BankClassLibrary.csproj">
+      <Project>{7d84755e-863a-4d19-a6b5-3398b049b271}</Project>
+      <Name>BankClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogClassesLibrary\LogClassesLibrary.csproj">
+      <Project>{f99c4223-cd3c-4d71-9b72-83eea3eb913d}</Project>
+      <Name>LogClassesLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -32,7 +32,7 @@
                 <ColumnDefinition Width="0.25*"></ColumnDefinition>
                 <ColumnDefinition Width="0.25*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <DataGrid Grid.Column="0" Name="dgClientsList"  Margin="10,10,10,10" AutoGenerateColumns="False" SelectionChanged="dgClientsList_SelectionChanged">
+            <DataGrid Grid.Column="0" Name="dgClientsList" SelectionMode="Single" Margin="10,10,10,10" AutoGenerateColumns="False" SelectionChanged="dgClientsList_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="DepId" Binding="{Binding Path=DepId}" IsReadOnly="True" Width="70" />
                     <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=LastName}" IsReadOnly="True" Width="150" />

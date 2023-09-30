@@ -146,3 +146,7 @@ C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\obj\Debug\SkillboxHomewo
 C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\obj\Debug\SkillboxHomework11.csproj.CopyComplete
 C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\obj\Debug\SkillboxHomework10_1.exe
 C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\obj\Debug\SkillboxHomework10_1.pdb
+C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\bin\Debug\BankClassLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\bin\Debug\BankClassLibrary.pdb
+C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\bin\Debug\LogClassesLibrary.dll
+C:\Skillbox\MyHomeworks\Homework13\SkillboxHomework11_1\bin\Debug\LogClassesLibrary.pdb

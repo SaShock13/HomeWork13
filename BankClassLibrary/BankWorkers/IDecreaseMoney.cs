@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SkillboxHomework10_1.BankWorkers
 {
-    internal interface IIncreaseMoney<out T> 
+    public interface IDecreaseMoney<in T> 
     {
-
-        T IncreaseMoney(int amount, BankAccount account);
+        void DecreaseMoney(T account,int amount);
     }
 }
